@@ -13,15 +13,15 @@ while True:
     s = set(map(chr, range(*map(ord, 'az'))))
 
     if "-" in set(num) :
-        print("Please enter a positive number")
+        print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
         continue
     
     elif set(num) & s == set(num):
-        print("Do not use any entries other than numeric values")
+        print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
         continue
     
     elif (set(num) & chk_list == {"."}) or (set(num) & chk_list == {","}) :
-        print("Please enter an integer number")
+        print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
         continue
     
     else :
